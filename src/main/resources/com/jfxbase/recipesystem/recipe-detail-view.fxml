@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfxbase.recipesystem.controllers.RecipeDetailView">
+   <children>
+      <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="42.0" prefWidth="74.0" style="-fx-background-color: #ebcf00;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="ingredientTable" layoutX="269.0" layoutY="90.0" prefHeight="200.0" prefWidth="324.0">
+         <columns>
+            <TableColumn fx:id="ingredientColumn" prefWidth="75.0" text="Ingredient" />
+            <TableColumn fx:id="quantityColumn" prefWidth="74.39996337890625" text="Quantity" />
+            <TableColumn fx:id="unitColumn" prefWidth="76.800048828125" text="Unit" />
+            <TableColumn fx:id="addToSLColumn" prefWidth="76.800048828125" text="Add to Shopping List" />
+         </columns>
+      </TableView>
+      <Button id="logOutButton" fx:id="editRecipeButton" layoutX="264.0" layoutY="350.0" mnemonicParsing="false" onAction="#onEditRecipeButtonClick" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: #ebcf00;" text="Edit Recipe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="logOutButton" fx:id="deleteRecipeButton" layoutX="468.0" layoutY="350.0" mnemonicParsing="false" onAction="#onDeleteRecipeButtonClick" prefHeight="42.0" prefWidth="117.0" style="-fx-background-color: #ebcf00;" text="Delete Recipe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="recipeNameText" layoutX="38.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="246.13671875" />
+      <Text fx:id="recipeDescriptionText" layoutX="37.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="246.13671875" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.jfxbase.recipesystem.controllers.ShoppingListController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="42.0" prefWidth="74.0" style="-fx-background-color: #ebcf00;" text="Back" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Button>
+    <TableView fx:id="ingredientTable" layoutX="332.0" layoutY="90.0" prefHeight="200.0" prefWidth="233.0">
+        <columns>
+            <TableColumn fx:id="ingredientColumn" prefWidth="75.0" text="Ingredient" />
+            <TableColumn fx:id="quantityColumn" prefWidth="74.39996337890625" text="Quantity" />
+            <TableColumn fx:id="unitColumn" prefWidth="76.800048828125" text="Unit" />
+            <TableColumn fx:id="boughtColumn" prefWidth="76.800048828125" text="Buy" />
+        </columns>
+    </TableView>
+
+    </children>
+
+</AnchorPane>

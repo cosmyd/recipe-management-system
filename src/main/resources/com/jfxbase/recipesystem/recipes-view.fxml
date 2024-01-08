@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfxbase.recipesystem.controllers.RecipesView">
+   <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="42.0" prefWidth="74.0" style="-fx-background-color: #ebcf00;" text="Back" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Button id="logOutButton" fx:id="addRecipeButton" layoutX="87.0" mnemonicParsing="false" onAction="#onAddRecipeButtonClick" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #ebcf00;" text="Add Recipe" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <VBox fx:id="recipesVBox" layoutX="37.0" layoutY="92.0" prefHeight="200.0" prefWidth="100.0" />
+   
+</AnchorPane>
