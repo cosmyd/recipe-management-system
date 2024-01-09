@@ -38,10 +38,8 @@ public class SignUpController {
         Connection conn = dbStuff.connectDB();
         ResultSet resultSet = dbStuff.getByUsername(conn, username);
         if (resultSet.next()){
-
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Username already exists");
-
             alert.setContentText("Username already exists");
 
             Optional<ButtonType> result = alert.showAndWait();

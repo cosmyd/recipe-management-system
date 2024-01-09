@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfxbase.recipesystem.controllers.EditRecipeController">
+<AnchorPane prefHeight="451.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jfxbase.recipesystem.controllers.EditRecipeController">
 <children>
     <Button id="backButton" fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="42.0" prefWidth="74.0" style="-fx-background-color: #ebcf00;" text="Back" textFill="WHITE">
         <font>
@@ -16,8 +16,8 @@
         </font>
     </Button>
     <TextField fx:id="recipeNameTextField" layoutX="24.0" layoutY="67.0" promptText="Recipe Name" />
-    <TextArea fx:id="recipeDescriptionTextArea" layoutX="24.0" layoutY="115.0" prefHeight="200.0" prefWidth="200.0" promptText="Recipe Description" />
-      <TableView fx:id="ingredientTable" layoutX="278.0" layoutY="74.0" prefHeight="200.0" prefWidth="233.0">
+    <TextArea fx:id="recipeDescriptionTextArea" layoutX="24.0" layoutY="115.0" prefHeight="283.0" prefWidth="254.0" promptText="Recipe Description" />
+      <TableView fx:id="ingredientTable" layoutX="320.0" layoutY="80.0" prefHeight="200.0" prefWidth="310.0">
         <columns>
           <TableColumn fx:id="ingredientColumn" prefWidth="75.0" text="Ingredient" />
           <TableColumn fx:id="quantityColumn" prefWidth="75.0" text="Quantity" />
@@ -26,7 +26,7 @@
 
         </columns>
       </TableView>
-      <Button id="" fx:id="saveRecipe" layoutX="395.0" layoutY="286.0" mnemonicParsing="false" onAction="#onSaveRecipeButtonClick" prefHeight="42.0" prefWidth="74.0" style="-fx-background-color: #ebcf00;" text="Save" textFill="WHITE">
+      <Button id="" fx:id="saveRecipe" layoutX="530.0" layoutY="362.0" mnemonicParsing="false" onAction="#onSaveRecipeButtonClick" prefHeight="42.0" prefWidth="74.0" style="-fx-background-color: #ebcf00;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
